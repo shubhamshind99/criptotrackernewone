@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+   --black:#000;
+   --white:#ffffff;
+   --lightgrey:#f1f1f1;
+   --darkblue:#0d102c;
+   --primarycolor:#3d51f2;
+   --secondarycolor:#5670ef;
+   --lightDark:#080A25;
+   --darkText:#8388B4;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+
+
+/* common styles */
+section{
+   width: 95%;
+   max-width: 1200px;
+   margin: auto;
+   margin-top: 2em;
+}
+
+.gridSection{
+   display: grid;
+   align-items: center;
+   gap: 40px;
+   margin-bottom: 5em;
+}
+
+#sectionPic{
+   width: 100%;
+   max-width: 550px;
+   margin: auto;
+}
+
+.sectionPic img{
+   width: 100%;
+}
+
+p{
+   color: var(--lightgrey);
+}
+
+.darkPara{
+   color: var(--darkText);
+   font-weight: 500;
+}
+
+.btn{
+   border: 1px solid #fff;
+   border-radius: 50px;
+   background-color: transparent;
+   color: var(--white);
+   font-size: 1.1rem;
+   padding: .7em 1.5em;
+   cursor: pointer;
+}
+
+.btn1{
+   margin-right: 1em;
+}
+
+.btn2{
+   border: none;
+}
+
+.primaryBtn{
+   background-color: var(--primarycolor);
+}
+
+@keyframes bounce {
+   0% {transform:translateY(-30px);}
+   50% {transform:translateY(30px);}
+   100% { transform:translateY(-30px)}
+ }
+
+.bouncepic img{
+  animation: bounce 15s infinite;    
+}
+
+.sectionHeader{
+   color: var(--white);
+   font-size: 2rem;
+   margin-bottom: .7em;
+}
+
+.sectionPara{
+   font-size: 1.1rem;
+   margin-bottom: 3em;
+}
+
+@media screen and (min-width:800px) {
+   section{
+       width: 85%;
+   }   
+   
+   .gridSection{
+       grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media screen and (min-width:1000px){
+   .sectionHeader{
+       font-size: 3em;
+   }
+}
+
+
+
+
+
+
+.container .title-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   text-align: center;
+   font-size: 30px;
+   margin: 20px 0;
+ }
+ 
+ .market-tab {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 20px 0;
+ }
+ 
+ .market-tab .market-table {
+   width: 80%;
+   border-collapse: collapse;
+ }
+ 
+ .table-heading, .table-data {
+   padding: 8px;
+ }
+ 
+ .market-tab .market-table .table-head .table-title {
+   width: 100%;
+   height: 30px; 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;  
+   border-bottom: 2px solid white;
+   color: white;
+ }
+ 
+ .table-heading {
+   font-size: 16px;
+   white-space: nowrap;
+   border-bottom: 3px solid white;
+   color: black;
+ } 
+ 
+ .table-row {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   width: 100%;
+ }
+ 
+ .table-data {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   border-bottom: 1px solid rgba(85, 83, 83, 0.355);
+   height: 80px;
+   color: #fff;
+   width: 100%;
+ }
+ 
+ .table-data .wrapper {
+   display: flex;
+   align-items: start;
+   gap: 8px;
+   width: 100%;
+ }
+ 
+ .table-data .add-to-fav {
+   border: none;
+   outline: none;
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+ }
+ 
+ .rank, .last-price, .market-cap {
+   font-weight: bold;
+   color: #ffffff;
+   margin: 0 10px ;
+ 
+ }
+ 
+ .coin-name {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   text-decoration: none;
+ }
+ 
+ .coin-name .span {
+   color: #aaa;
+   font-size: 14px;
+ }
+ 
+ .table-data .trade {
+   background-color: black;
+   border: 2px solid white;
+   width: 60px;
+   height: 30px;
+   color: white;
+   border-radius: 50px;
+   cursor: pointer;
+ }
+ 
+ .table-data .trade:hover {
+   background-color: blue;
+   border: none;
+   outline: none;
+   box-shadow: 0px 0px 10px rgb(255, 0, 8);
+ }
+ 
+ .last-update.green {
+   color: greenyellow;
+ }
+ 
+ .last-update.red {
+   color: red;
+ }
+ 
+ #pagination {
+   margin-top: 20px;
+ }
+ 
+ #pagination button {
+   margin: 0 5px;
+   padding: 5px 10px;
+   border: none;
+   background-color: #007bff;
+   color: #fff;
+   cursor: pointer;
+ }
+ 
+ #pagination button:hover {
+   background-color: #0056b3;
+ }
+ 
+ .market-tab .market-table .table-body {
+   width: 100%;
+   height: 50px;
+  
+   border-bottom: 2px solid white;
+ 
+ }
+ .market-tab .market-table .table-body .table-data{
+   height: 80px;
+   background-color: #fff5f5;
+ }
+ 
+ 
+ 
+ .market-tab .market-table .crypto-list .table-body .table-data:hover {
+   background-color: rgba(63, 61, 61, 0.249);
+ }
+ 
+ .table-data{
+   height: 100px;
+ }
+ 
+ .name{
+   display: flex;
+   width: 150px;
+  margin-left: 50px;
+ }
+ .coin-name{
+   margin-left: 20px;
+ }
+ 
+ /* .logo{
+   padding: 20px 5px 0px 0px;
+ } */
+ 
+ .rank{
+ 
+   margin-left: 40px;
+ }
+ 
+ .last-p{
+ width: 120px;
+   align-items: center;
+  margin-left: 70px;
+  
+ }
+ .add-to-fav {
+   margin-left: 40px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color: white;
+  
+ }
+ 
+ .add-to-fav .fa-solid {
+   color: grey;
+ }
+ 
+ .add-to-fav.filled .fa-star {
+   color: gold;
+ }
+ 
+ 
+ .last-update{
+   width: 80px;
+   margin-left: 70px;
+ }
+ .market-cap{
+   width: 180px;
+   margin-left: 50px;
+   padding-left: 30px;
+ }
+ .chart{
+   margin-left: 45px;
+   width: 100px;
+ }
+ .trade{
+   width: 65px;
+   height: 35px;
+   margin-left: 30px;
+   border-radius: 30px;
+   cursor: pointer;
+   background-color: blue;
+   color: white;
+   border: none;
+   outline: none;
+ }
+ .trade:hover{
+   background-color:aqua;
+   box-shadow: 0px 0px 5px aqua;
+ }
+ 
+ .table-row{
+   height: 100px;
+   border-bottom: 2px solid rgba(91, 87, 87, 0.621);
+ }
+ .table-row:hover{
+   background-color: rgba(22, 21, 21, 0.779);
+ }
+ 
+ #pagination {
+   margin-bottom: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   gap: 5px;
+ }
+ 
+ #pagination button {
+   padding: 5px 10px;
+   border: none;
+   background-color: transparent;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+ }
+ 
+ #pagination button.active {
+   background-color:blue;
+   font-weight: bold;
+ }
+ 
+ #pagination button.disabled {
+   cursor: not-allowed;
+   background-color: #e0e0e0;
+   color: #a0a0a0;
+ }
+ 
+ .skeleton-loader {
+   
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
+   gap: 5px;
+ }
+ 
+ .skeleton-item {
+   background: #ccc;
+  
+   height: 100px;
+   border-radius: 8px;
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ .skeleton-item::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+   animation: loading 1.5s infinite;
+ }
+ 
+ @keyframes loading {
+   0% {
+     transform: translateX(-100%);
+   }
+   100% {
+     transform: translateX(100%);
+   }
+ }
+ 
+ .hidden {
+   display: none;
+ }
+ /* Modal Styles */
+ .modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+   padding-top: 60px;
+ }
+ 
+ .modal-content {
+   background-color: #121111;
+   margin: 5% auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+ }
+ 
+ .close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: rgb(240, 14, 14);
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ #chartContainer {
+   width: 100%;
+   height: 400px;
+ }
+ .modal .modal-content h2{
+   color: #fff;
+ 
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

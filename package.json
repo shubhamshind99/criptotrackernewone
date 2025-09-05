@@ -1,0 +1,18 @@
+{
+  "name": "criptotraker",
+  "version": "1.0.0",
+  "description": "- ✅ Live price updates for **100+ cryptocurrencies**\r - 📈 Interactive charts for prices, volume & market cap\r - 🔍 Powerful search and filter by coin name or symbol\r - ⭐ Favorite your coins for easy tracking\r - 📊 Market details:\r   - Market Cap, Volume, Rank\r   - Supply, Sentiment, Diluted Valuation\r - 🔁 **Carousel** for top coins (BTC, ETH, USDT, etc.)",
+  "main": "index.js",
+   "scripts": {
+    "start": "concurrently \"npm run start --prefix frontend\" \"npm run start --prefix backend\"",
+    "setup": "node setup-env.js",
+    "install-all": "npm install && npm install --prefix frontend && npm install --prefix backend"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

@@ -1,0 +1,182 @@
+
+<header class="header">
+  <div class="header-container">
+    <!-- Logo -->
+    <a routerLink="/home" class="logo">
+     <img src="./img/logo new.png" alt="ChainVerse Logo">
+    </a>
+
+    <!-- Nav Toggle (Mobile) -->
+    <button class="nav-toggle" (click)="toggleNav()" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav class="nav" [class.showNav]="isNavVisible" id="nav">
+      <ul class="nav-links">
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+
+      <!-- Social Media -->
+      <div class="social-icons">
+        <a><img src="./img/fabook-icon-white.svg" alt="Facebook"></a>
+        <a><img src="./img/twitter-icon-white.svg" alt="Twitter"></a>
+        <a><img src="./img/inkedin-icon-white.svg" alt="LinkedIn"></a>
+        <a><img src="./img/whatsapp-icon-white.svg" alt="WhatsApp"></a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- About Us Hero -->
+<section class="gridSection">
+  <div class="sectionDesc aboutusDesc">
+    <h1 class="headline">About Crypto Tracker</h1>
+    <p class="sub-headline">
+      Welcome to <strong>Crypto Tracker</strong> — your all-in-one platform for exploring the digital asset world. Whether you're just starting or already trading, we help you stay informed, test strategies, and track the crypto market with ease.
+    </p>
+    <p class="sub-headline">
+      With a clean design and powerful features, Crypto Tracker is built to simplify your journey in crypto. Experience real-time data, demo trading, and educational tools — all in one place.
+    </p>
+  </div>
+
+  <div class="sectionPic bouncepic aboutusPic" id="sectionPic">
+    <img src="./img/about-hero.png" alt="About Crypto Tracker">
+  </div>
+</section>
+
+<!-- About Us Stats -->
+<section class="stats-section">
+  <div class="stats-heading">
+    <h2>Why Crypto Tracker?</h2>
+    <p>Smarter crypto tracking. Safer trading. Better insights.</p>
+  </div>
+
+  <div class="statusContainer">
+    <!-- Current Features -->
+    <div class="status">
+      <h1>500+</h1>
+      <h3>Demo Traders</h3>
+      <p>Practice your strategies with zero risk — perfect for learning or testing.</p>
+    </div>
+
+    <div class="status">
+      <h1>100+</h1>
+      <h3>Cryptocurrencies</h3>
+      <p>Browse live charts, prices, and market stats of top coins and tokens.</p>
+    </div>
+
+    <div class="status">
+      <h1>24/7</h1>
+      <h3>Live Updates</h3>
+      <p>Stay on top of the market with real-time price tracking and insights.</p>
+    </div>
+  </div>
+
+  <!-- Coming Soon Section -->
+  <div class="comingSoonContainer">
+    <h2>🚀 Coming Soon</h2>
+    <ul class="comingSoonList">
+      <li>💰 Portfolio Management & Alerts</li>
+      <li>📈 Personalized Trading Insights</li>
+      <li>🤖 AI-Powered Coin Predictions</li>
+      <li>📱 Mobile App for On-the-Go Access</li>
+      <li>🔐 Secure KYC & Wallet Integration</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Services and Platform Features -->
+<div class="services">
+  <div class="aboutusimgContainer">
+    <!-- Optional: Add images or illustrative content here -->
+  </div>
+
+  <div class="offers">
+    <div class="eachOffer">
+      <img src="./img/fast-forward-icon-white.svg" alt="Current Features">
+      <div class="offerDesc">
+        <h1>Current Features</h1>
+        <p>
+          ✔ Real-Time Crypto Listings <br>
+          ✔ Risk-Free Demo Trading <br>
+          ✔ Interactive Coin Charts & Stats <br>
+          ✔ Price History & Market Sentiment
+        </p>
+      </div>
+    </div>
+
+    <div class="eachOffer">
+      <img src="./img/support-agent-icon-white.svg" alt="Upcoming Features">
+      <div class="offerDesc">
+        <h1>Coming Soon</h1>
+        <p>
+          🔜 Live Trading Capabilities <br>
+          🔜 AI Trade Recommendations <br>
+          🔜 Mobile App (iOS & Android) <br>
+          🔜 Community Challenges & Rewards
+        </p>
+      </div>
+    </div>
+
+    <div class="eachOffer">
+      <img src="./img/progress-warning-icon-white.svg" alt="Vision">
+      <div class="offerDesc">
+        <h1>Our Vision</h1>
+        <p>
+          To empower users globally by making crypto trading transparent, secure, and beginner-friendly — one feature at a time.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <footer>
+        <div class="footerlinksContainer">
+            <div class="footerAboutus">
+                <img src="./img/logo-white.png" alt="">
+                <p class="darkPara">With no commissions and a simple user interface, 
+                 Prouple is the most reliable way to trade for 
+                 Cryptocurrency.
+                </p>
+                <div class="footersociallinkContainer">
+                    <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                    <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
+                    <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                    <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+                </div>
+            </div>
+    
+            <div class="footerlink">
+                <h1 class="linkTitle">Explore</h1>
+                <a  class="eachLink">About us</a>
+                <a  class="eachLink">FAQ</a>
+                <a  class="eachLink">Blog</a>
+                <a  class="eachLink">Contact</a>
+            </div>
+    
+            <div class="footerlink">
+                <h1 class="linkTitle">Service</h1>
+                <a  class="eachLink">Mining</a>
+                <a  class="eachLink">Control Data</a>
+                <a  class="eachLink">Design</a>
+                <a  class="eachLink">Security</a>
+            </div>
+    
+            <div class="footerlink">
+                <h1 class="linkTitle">Resource</h1>
+                <a  class="eachLink">Style Guide</a>
+                <a  class="eachLink">Change Log</a>
+                <a  class="eachLink">License</a>
+            </div>
+        </div>
+    
+        <div class="footerCopyright">
+             <p>&copy; 2025 design and developed by <a  class="developedBy">Code Smeshers</a>.</p>
+        </div>
+    </footer>
+    

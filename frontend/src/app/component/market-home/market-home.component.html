@@ -1,0 +1,60 @@
+<!-- index.html -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.7.1/dist/chartjs-chart-financial.min.js"></script>
+<script src="node_modules/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@latest/dist/chartjs-adapter-date-fns.min.js"></script>
+<script src="https://s3.tradingview.com/tv.js"></script>
+
+<section class="section market" aria-label="market update" data-section>
+  <div class="container">
+    <div class="title-wrapper">
+      <h2>Market Update</h2>
+    </div>
+
+    <div class="market-tab">
+      <table class="market-table">
+        <thead class="table-head">
+          <tr class="table-title">
+            <th></th>
+            <th>#</th>
+            <th>Name</th>
+            <th>Last Price</th>
+            <th>24h %</th>
+            <th>Market Cap</th>
+            <th>Last 7 Days</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="table-body" id="crypto-list"></tbody>
+      </table>
+      <div id="loader" class="skeleton-loader hidden">
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+      </div>
+    </div>
+
+    <div id="pagination"></div>
+  </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="coinModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <div id="chartContainer">
+      <!-- Removed this div, as the TradingView chart will be handled by chart.html -->
+    </div>
+    <h2 id="coinName"></h2>
+  </div>
+</div>
+
